@@ -1,0 +1,42 @@
+<style>
+.enois-pdf-cover{--ep-bg:#05080c;--ep-cyan:#6dd3e8;--ep-mint:#70e0b5;--ep-gold:#e1b85b;--ep-orange:#ff8a3d;--ep-white:#f5f8fb;box-sizing:border-box;position:relative;isolation:isolate;container-type:inline-size;width:100%;aspect-ratio:4/1;min-height:clamp(250px,calc(600px - 50vw),320px);overflow:hidden;border:1px solid #e1b85b55;background:var(--ep-bg);color:var(--ep-white);font-family:Arial,Helvetica,sans-serif;text-align:left;color-scheme:dark}
+.enois-pdf-cover *,.enois-pdf-cover *::before,.enois-pdf-cover *::after{box-sizing:border-box}
+.enois-pdf-cover .ep-art{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center;filter:none}
+.enois-pdf-cover::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,8,12,.94),rgba(5,8,12,.84) 53%,rgba(5,8,12,.62))}
+.enois-pdf-cover::after{content:"";position:absolute;left:0;top:36%;width:4px;height:28%;background:var(--ep-orange)}
+.enois-pdf-cover .ep-copy{position:absolute;left:4%;right:29%;top:50%;transform:translateY(-50%)}
+.enois-pdf-cover .ep-name{margin:0 0 18px;font-size:clamp(22px,3.4cqi,46px);font-weight:700;line-height:1.12;letter-spacing:-.045em;color:var(--ep-white)}
+.enois-pdf-cover .ep-signature{color:var(--ep-cyan);white-space:nowrap}
+.enois-pdf-cover .ep-description{margin:0;max-width:650px;font-size:clamp(12px,1.36cqi,17px);font-weight:400;line-height:1.7;letter-spacing:.01em;color:var(--ep-white);text-wrap:pretty}
+.enois-pdf-cover .ep-primary{color:var(--ep-mint)}
+.enois-pdf-cover .ep-secondary{color:var(--ep-gold)}
+.enois-pdf-cover .ep-radio{position:absolute;top:16px;right:20px;width:250px;display:flex;align-items:center;gap:10px}
+.enois-pdf-cover .ep-radio-label{font-size:10px;line-height:1.3;letter-spacing:.12em;font-weight:700;color:var(--ep-cyan)}
+.enois-pdf-cover .ep-audio{display:block;width:200px;min-width:0;height:32px;border-radius:18px}
+.enois-pdf-cover .ep-audio:focus-visible{outline:2px solid var(--ep-orange);outline-offset:5px}
+.enois-pdf-cover .ep-pose{position:absolute;right:5%;bottom:6%;width:18%;height:68%;overflow:visible}
+@container (max-width:700px){.enois-pdf-cover .ep-copy{left:6%;right:25%;top:58%}.enois-pdf-cover .ep-name{font-size:clamp(23px,4.6cqi,32px);margin-bottom:13px}.enois-pdf-cover .ep-description{font-size:12px;line-height:1.6}.enois-pdf-cover .ep-radio{top:16px;right:16px}.enois-pdf-cover .ep-pose{right:3%;bottom:8%;width:19%;height:58%}}
+@media(max-width:700px){.enois-pdf-cover{aspect-ratio:auto;min-height:320px}}
+@container (max-width:400px){.enois-pdf-cover .ep-copy{right:24%;top:60%}.enois-pdf-cover .ep-name{font-size:24px}.enois-pdf-cover .ep-description{font-size:12px;line-height:1.55}.enois-pdf-cover .ep-pose{width:19%;right:2%;bottom:6%;height:55%}}
+</style>
+<section class="enois-pdf-cover" aria-label="Capa de Pedro D. Ferreira (.pdf)">
+  <img class="ep-art" src="https://datadotpdf.github.io/enois-profile-assets/assets/manga-background.webp" alt="" width="995" height="306" decoding="async">
+  <div class="ep-copy"><h2 class="ep-name">Pedro D. Ferreira <span class="ep-signature">(.pdf)</span></h2><p class="ep-description"><span class="ep-primary">Data Engineer &amp; Cybersecurity Student</span> | <span class="ep-secondary">Red Team &amp; Offensive Security</span> | Python · SQL · Automation · Data Quality</p></div>
+  <div class="ep-radio"><span class="ep-radio-label" aria-hidden="true">ANIME<br>RADIO</span><audio class="ep-audio" controls preload="none" aria-label="Rádio AnimeAMAZE ao vivo: reproduzir ou pausar"><source src="https://radio.animeamaze.net:8443/AnimeAMAZE64" type="audio/aac">Seu navegador não oferece suporte a áudio HTML5.</audio></div>
+  <svg class="ep-pose" viewBox="0 0 180 210" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <path d="M45 176h90l10 17H35z" fill="#05080c" stroke="#e1b85b" stroke-width="2"/>
+    <path d="M54 174V152M126 174V152M90 175v-19" stroke="#e1b85b" stroke-width="3"/>
+    <ellipse cx="90" cy="167" rx="53" ry="10" fill="#05080c" stroke="#e1b85b" stroke-width="2"/>
+    <circle cx="90" cy="96" r="69" fill="#05080c" fill-opacity=".7" stroke="#e1b85b" stroke-width="2"/>
+    <circle cx="90" cy="96" r="61" stroke="#6dd3e8" stroke-opacity=".6"/>
+    <path d="M90 28v8m0 120v8M21 96h8m122 0h8M42 48l6 6m84 84 6 6m0-96-6 6m-84 84-6 6" stroke="#e1b85b" stroke-width="2"/>
+    <ellipse cx="90" cy="112" rx="51" ry="16" stroke="#70e0b5" stroke-opacity=".6"/>
+    <path d="M90 59l-12 53 12-8 12 8z" fill="#6dd3e8"/>
+    <path d="M90 59v45l12 8z" fill="#70e0b5"/>
+    <path d="M90 104v36" stroke="#e1b85b" stroke-width="3"/>
+    <circle cx="90" cy="106" r="5" fill="#e1b85b" stroke="#05080c" stroke-width="2"/>
+    <path d="M43 91c0-22 11-40 27-48" stroke="#f5f8fb" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"/>
+    <text x="90" y="20" text-anchor="middle" fill="#e1b85b" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">N</text>
+    <path d="M30 198h120" stroke="#e1b85b" stroke-opacity=".5"/>
+  </svg>
+</section>
